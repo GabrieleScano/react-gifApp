@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import { useFetchGifs } from '../hooks/useFetchGifs'
 import { GifGridItem } from './GifGridItem'
+import { Spinner } from './Spinner'
 
 export const GifGrid = ({ category }) => {
   const { data: images, loading } = useFetchGifs(category);
@@ -11,7 +12,7 @@ export const GifGrid = ({ category }) => {
     <>
       <h3 className='animate__animated animate__fadeIn'>{category}</h3>
 
-      {loading && <p>Loading...</p>}
+      {loading && <Spinner />}
 
       <div className='card-grid'>
         {images.map((img) => (
