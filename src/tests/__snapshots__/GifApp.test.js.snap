@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <GifApp /> component should show a list of categories 1`] = `
+<div>
+  <h2>
+    Gif App
+  </h2>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ul>
+    <GifGrid
+      category="one"
+      key="one"
+    />
+    <GifGrid
+      category="two"
+      key="two"
+    />
+  </ul>
+  <hr />
+</div>
+`;
+
+exports[`Test <GifApp /> component should show the component 1`] = `
+<div>
+  <h2>
+    Gif App
+  </h2>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ul />
+  <hr />
+</div>
+`;

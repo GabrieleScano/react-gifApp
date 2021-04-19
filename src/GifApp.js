@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { AddCategory } from "./components/AddCategory";
 import { GifGrid } from "./components/GifGrid";
 
-export const GiftApp = () => {
-  const [categories, setCategories] = useState(["javascript"]);
+const GifApp = ({ defaultCategories = [] }) => {
+  const [categories, setCategories] = useState(defaultCategories);
 
   return (
     <div>
-      <h2>Gift App</h2>
+      <h2>Gif App</h2>
       <AddCategory setCategories={setCategories} />
       <hr />
       <ul>
@@ -20,3 +20,5 @@ export const GiftApp = () => {
     </div>
   );
 };
+
+export default GifApp
