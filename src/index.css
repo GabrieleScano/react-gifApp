@@ -1,5 +1,7 @@
 * {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  background-color: rgb(49, 47, 47);
 }
 
 body {
@@ -9,19 +11,31 @@ button {
   padding: 10px;
 }
 
+h2 {
+  text-align: center;
+}
+
 input {
   color: gray;
   font-size: 1.2rem;
   width: 100%;
+  background-color: white;
+  border: none;
+  border-radius: 0px;
+  outline: transparent;
+}
+
+input:focus {
+  /* background-color: rgba(209, 255, 240, 0.977); */
 }
 
 .card {
-  align-content: center;
-  border: 1px solid grey;
-  border-radius: 2px;
+
+  text-align: center;
   margin-bottom: 10px;
   margin-right: 10px;
   overflow: hidden;
+  max-width: 215px;
 }
 
 .card p {

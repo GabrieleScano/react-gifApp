@@ -9,14 +9,11 @@ export const GifApp = ({ defaultCategories = [] }) => {
     <div>
       <h2>Gif App</h2>
       <AddCategory setCategories={setCategories} />
-      <hr />
       <ul>
         {categories.map((category) => {
           return <GifGrid category={category} key={category} />;
         })}
       </ul>
-
-      <hr />
     </div>
   );
 };

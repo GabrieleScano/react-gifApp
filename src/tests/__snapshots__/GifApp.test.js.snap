@@ -8,7 +8,6 @@ exports[`Test <GifApp /> component should show a list of categories 1`] = `
   <AddCategory
     setCategories={[Function]}
   />
-  <hr />
   <ul>
     <GifGrid
       category="one"
@@ -19,7 +18,6 @@ exports[`Test <GifApp /> component should show a list of categories 1`] = `
       key="two"
     />
   </ul>
-  <hr />
 </div>
 `;
 
@@ -31,8 +29,6 @@ exports[`Test <GifApp /> component should show the component 1`] = `
   <AddCategory
     setCategories={[Function]}
   />
-  <hr />
   <ul />
-  <hr />
 </div>
 `;
